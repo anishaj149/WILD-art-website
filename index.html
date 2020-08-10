@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Art Charity Shop</title>
+        <link rel="stylesheet" type= "text/css" href="design.css">  
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-nav">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+
+                <div class="right-nav">
+                    <div class="brand">
+                        <div>TJ WILD</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="painting-items-wrapper">
+                    <div class="painting-item-wrapper">
+                        <div class="painting-img-background" style="background-image:url(images/Baby_Yoda.png)"></div>
+            
+                        <div class="img-text-wrapper">
+                            <div class="title">Baby Yoda</div>
+                            <div class="artist">Artist:</div>
+                            <div class="price">Price: $20.00 </div>
+                        </div>
+                    </div>
+                    
+                    <div class="painting-item-wrapper">
+                        <div class="painting-img-background" style="background-image:url(images/girl_painting.JPG)"></div>
+                    
+                        <div class="img-text-wrapper">
+                            <div class="title">Girl</div>
+                            <div class="artist">Artist:</div>
+                            <div class="price">Price: $20.00</div>
+                        </div>
+                    </div> 
+
+                    <div class="more-coming">
+                        More is on the way!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+<script>
+    const paintingItems = document.querySelectorAll('.painting-item-wrapper')
+    paintingItems.forEach(paintingItem => {
+        paintingItem.addEventListener('mouseover', () => {
+            paintingItem.childNodes[1].classList.add('img-darken')
+        })
+        paintingItem.addEventListener('mouseout', () => {
+            paintingItem.childNodes[1].classList.remove('img-darken')
+        })
+
+    })
+</script>
+</html>
+
