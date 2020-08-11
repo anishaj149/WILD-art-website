@@ -1,9 +1,18 @@
 /* master styles */
 body {
     margin: 0px;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body{
+    height: 100%;
 }
 
 .container{
+    flex: 10 auto;
+    padding-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -86,10 +95,115 @@ body {
 
 .img-text-wrapper:hover{
     transition: 1s;
-    color: white;
+    color: lightgreen;
+    font-weight: 300;
 }
 
 .img-darken{
     transition: 1s;
     filter: brightness(10%);
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+/*more coming*/
+.more-coming{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: lightgreen;
+
+}
+
+.more-coming > .more-coming-update {
+    color: transparent;
+}
+
+.more-coming:hover > .more-coming-update{
+    transition: 1s;
+    color: gray;
+}
+/* about page */
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width: 100%;
+
+}
+
+.profile-content-wrapper{
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    color: lightgreen;
+}
+
+/* purchase form*/
+
+form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-color: lightgreen;
+    border-width: 10px;
+    width: 100%;
+    height: cover;
+}
+
+input{
+    outline: none;
+    
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+/* bottom bar */
+
+.bottom-nav-wrapper{
+    flex-shrink: 0;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 38px;
+    background-color: lightgreen;
+    bottom: 0px;
+}
+
+.copyright{
+    padding-top: 20px;
+}
+.icons{
+    display: flex;
+}
+.icon{
+    padding: 15px;
+}
+
+/*miscellaneous*/
+
+.form-wrapper > .button{
+    font-family: "lato", sans-serif;
+    color: gray;
+    font-weight: 600;
+    background-color: lightgreen;
+    border: none;
+    
 }
