@@ -129,7 +129,7 @@ html, body{
 
 .more-coming:hover > .more-coming-update{
     transition: 1s;
-    color: gray;
+    color:black;
 }
 /* about page */
 
@@ -149,6 +149,12 @@ html, body{
 
 .profile-content-wrapper h1{
     color: lightgreen;
+}
+
+.profile-content-wrapper a{
+    color: lightgreen;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* purchase form*/
@@ -181,7 +187,7 @@ input{
 
 .bottom-nav-wrapper{
     flex-shrink: 0;
-    color: gray;
+    color:black;
     display: flex;
     justify-content: space-between;
     
@@ -198,6 +204,11 @@ input{
 }
 .icon{
     padding: 15px;
+    color: gray;
+}
+.icon:hover{
+    padding-top: 22px;
+    transition: .5s;
 }
 
 /*miscellaneous button stuff*/
@@ -262,8 +273,8 @@ select{
     text-decoration: none;
 }
 .featured-charity-wrapper > .charity-content{
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
     text-align: center;
     
 }
