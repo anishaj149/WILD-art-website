@@ -1,3 +1,7 @@
+.profile-content-wrapper > .artbutton{
+    color: white;
+}
+
 /* master styles */
 body {
     margin: 0px;
@@ -151,7 +155,7 @@ html, body{
     color: lightgreen;
 }
 
-.profile-content-wrapper a{
+.profile-content-wrapper > .about-link{
     color: lightgreen;
     text-decoration: none;
     font-weight: 600;
